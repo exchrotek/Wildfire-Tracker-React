@@ -17,7 +17,9 @@ const Map = ({ center, zoom, eventData }) => {
                         // visibility depends on the Clicked state
                         if(locationInfo.id !== ev.id){
                             setClicked(true)
-                        }else{
+                        }
+                        //If the same location marker was clicked, remove the location info box
+                        else{
                             setClicked(false)
                         }
                     
